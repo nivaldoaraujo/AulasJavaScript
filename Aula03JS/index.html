@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="calculo()" >Clique aqui!!</button>
+    <section id="resultado" > 
+        <p>Aqui vai aparecer o resultado..</p>
+    </section>
+    <script>
+        function calculo(){
+        let n1 = parseFloat( prompt("Digite primeiro número: ") ) 
+        let n2 = parseFloat( prompt("Digite segundo número: ") )
+        let n3 = parseFloat( prompt("Digite segundo número: "))
+        let total = (n1 + n2 + n3)/3
+        let res = window.document.getElementById('resultado')
+            res.innerHTML = `A média é: ${total.toFixed(2)} `
+        }
+    </script>
+</body>
+</html>

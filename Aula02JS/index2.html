@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Digite o nome aqui!!</h1>
+    <button onclick="smd()">Clique aqui!</button>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado....</p>
+    </section>
+    <script>
+        function smd()
+        {
+            let nome = window.prompt("Qual o seu nome??")
+            let x = prompt("Digite sua idade: ")
+            window.alert(`Olá, ${nome} é um prazer te conhecer..`)
+            //capatar o velemento de minha section
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>Olá, <strong>${nome} - Idade - ${x}</strong>! è um gramde prazer em te conhecer.`
+        }
+    </script>
+</body>
+</html>

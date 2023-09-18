@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Vamos calculara agora..</H1>
+    <button onclick="calculo()">Calcular</button>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado do calculo....</p>
+    </section>
+    <script>
+        function calculo(){
+        //let n1 = ("Digite a priemira Nota: ") da ruim tem que converter
+        let n1 = parseFloat(prompt("Digite a priemira Nota: "))
+        let n2 = parseFloat(prompt("Digite a segunda Nota: "))
+        let n3 = parseFloat(prompt("Digite a terceira Nota: "))
+        let n4 = parseFloat(prompt("Digite a quarta Nota: "))
+        let total = (n1 + n2 + n3 + n4)/4
+        let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p>A média deste calculo é: ${total.toFixed(1)} </p>`
+        }
+    </script>
+    
+</body>
+</html>
