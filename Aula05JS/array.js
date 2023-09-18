@@ -1,0 +1,42 @@
+
+//objeto
+var x = {produto: "lápis", valor: 2.00}
+//array
+var arrayProduto = ["Lápis", "200", "Apontador"]
+
+//listado valores numerais
+const numeros = [23, 5, 100, 56, 9, 13, 37, 10, 1]
+
+console.log(numeros.sort())
+function camparaAscendente(a, b)
+{
+    return  (a-b)
+}
+console.log(numeros.sort(camparaAscendente)) //usando o método para listar valores númericos em ordem alfabetica
+
+console.log(  numeros.sort( (a, b) => (a-b) ) )
+
+
+
+
+var shopping = ["Lojas", "Alimentos", "Roupas", "Calçados", 
+"Cinema", "Brinquedos"];
+var y = shopping.reverse()
+
+
+
+
+
+for(var x of shopping)
+{
+    shopping.sort()
+    console.log(x)
+}
+//shopping[2] = "Blusa"
+//shopping.push("Pessoas")
+//shopping.pop("Alimentos")
+//shopping.shift()
+
+//console.log("Está na posição de index: " + shopping.indexOf("Cinema"))
+//console.log(shopping[0])
+//console.log(shopping.length)
