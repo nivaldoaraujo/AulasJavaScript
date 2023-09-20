@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="fale">Fale comigo!</button>
+    <div class="contato"></div>
+    
+    
+    <script>
+        // pegando o  botão usando o seletor de ID "fale"
+        const button = document.querySelector("#fale")
+
+        // adicionando um evento quando o usuário clica no botão e chama a função "faleComigo"
+        button.addEventListener("click", faleComigo);
+        function faleComigo(){
+        // Selecionando a div "contato"
+        const divContato =  document.querySelector(".contato");
+  
+        // Colocando o texto na div
+        divContato.innerText = "Olá pessoa, deu certo na aula de nº 7!";
+}
+    </script>
+</body>
+</html>
