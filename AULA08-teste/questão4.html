@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero, menor, maior, cont = 0, media = 0, soma = 0
+        while(cont < 5)
+        {
+            numero = parseFloat( prompt("Digite um número: "))
+            //media
+            soma = soma + numero
+            media = soma / cont
+
+            if(! menor || numero < menor) // !
+            {
+                menor = numero
+            }
+            if(! maior || numero > maior) // !
+            {
+                maior = numero
+            }
+            cont++
+            
+        }
+        document.writeln ("Menor valor digitado: ", menor ? menor : "Nenhum número foi digitado", "<br/>")
+        document.writeln("Maior valor digitado: ", maior ? maior : "Nenhum número foi digitado", "<br/>")
+        document.writeln("A média é: ", media.toFixed(1))
+
+    </script>
+</body>
+</html>
